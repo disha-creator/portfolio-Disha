@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Disha Lodhi • Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Disha Lodhi — Portfolio & résumé.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Animated background layer -->
+  <div id="bg">
+    <!-- vivid glowing orbs -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+    <div class="orb orb-4" aria-hidden="true"></div>
+
+    <!-- shimmering rainbow ribbon -->
+    <div class="flow-line" aria-hidden="true"></div>
+
+    <!-- floating dots canvas -->
+    <canvas id="particles" aria-hidden="true"></canvas>
+  </div>
+
+  <!-- Page -->
+  <div class="page">
+    <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+      <div class="brand">Disha Lodhi</div>
+      <ul class="nav-links" id="navLinks">
+      <li><a href="#home"><span class="text">HOME</span><span class="icon">🏠</span></a></li>
+      <li><a href="#skills"><span class="text">SKILLS</span><span class="icon">⚡</span></a></li>
+      <li><a href="#projects"><span class="text">PROJECTS</span><span class="icon">💻</span></a></li>
+      <li><a href="#education"><span class="text">EDUCATION</span><span class="icon">🎓</span></a></li>
+      <li><a href="#certifications"><span class="text">CERTIFICATIONS</span><span class="icon">📜</span></a></li>
+      <li><a href="#contact-strip"><span class="text">CONTACT</span><span class="icon">📞</span></a></li>
+    </ul>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="hero-left">
+        <h1>Hi, I'm <span class="name">Disha Lodhi</span></h1>
+        <h2 class="typed">
+          <span id="typed-line"></span><span class="cursor">|</span>
+        </h2>
+        <p class="lead">Welcome to my portfolio — here you'll find my projects, education and skills.</p>
+
+        <div class="cta">
+          <!-- Yahan apna resume ka link daal dena -->
+         <a class="btn ghost"
+   href="resume/Disha.resume.pdf"
+   target="_blank"
+   download>
+   Download Resume
+</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="avatar-wrap">
+         <img src="./assests/image.jpg" alt="Headshot of Disha Lodhi smiling in a three quarter portrait with a soft neutral background, welcoming tone" class="avatar">
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section id="skills" class="section reveal">
+        <h2>Tools I wield to turn ideas into reality</h2>
+
+        <!-- Languages -->
+        <div class="skill-category">
+          <h4>Languages</h4>
+          <div class="skills-row">
+            <div class="skill-item">
+              <img src="assests/icons/python.svg" alt="Python logo representing the Python programming language used for scripting and data work" class="skill-icon">
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <img src="assests/icons/javascript.svg" alt="JavaScript logo representing the JavaScript programming language for web development" class="skill-icon">
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <img src="assests/icons/html.svg" alt="HTML5 logo representing the HTML markup language used for structuring web content" class="skill-icon">
+              <span>HTML</span>
+            </div>
+            <div class="skill-item">
+              <img src="assests/icons/css.svg" alt="CSS3 logo representing the cascading style sheets language used for web styling" class="skill-icon">
+              <span>CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skill-category">
+          <h4>Framework</h4>
+          <div class="skills-row">
+            <div class="skill-item">
+              <img src="assests/icons/Django.png" alt="Django logo representing the Django Python web framework" class="skill-icon" style="background: white;">
+              <span>Django</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Libraries -->
+        <div class="skill-category">
+          <h4>Libraries</h4>
+          <div class="skills-row">
+            <div class="skill-item">
+              <img src="assests/icons/numpy.svg" alt="NumPy logo representing the NumPy numerical computing library for Python" class="skill-icon">
+              <span>NumPy</span>
+            </div>
+            <div class="skill-item">
+              <img src="assests/icons/pandas.svg" alt="Pandas" class="skill-icon" style="background: white;">
+              <span>Pandas</span>
+            </div>
+            <div class="skill-item">
+              <img src="assests/icons/matplotlib.svg" alt="Matplotlib" class="skill-icon" style="background: white;">
+              <span>Matplotlib</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category">
+          <h4>Database</h4>
+          <div class="skills-row">
+            <div class="skill-item">
+              <img src="assests/icons/mysql.svg" alt="MySQL" class="skill-icon">
+              <span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category">
+          <h4>Tools</h4>
+          <div class="skills-row">
+            <div class="skill-item">
+              <img src="assests/icons/github.svg" alt="GitHub" class="skill-icon" style="background: white;">
+              <span>GitHub</span>
+            </div>
+            <div class="skill-item">
+              <img src="assests/icons/vscode.svg" alt="VS Code" class="skill-icon">
+              <span>VS Code</span>
+            </div>
+            <div class="skill-item">
+              <img src="assests/icons/powerbi.png" alt="Power BI" class="skill-icon" style="background: white;">
+              <span>Power BI</span>
+            </div>
+            <div class="skill-item">
+              <img src="assests/icons/ms-excel.png" alt="MS Excel" class="skill-icon" style="background: white;">
+              <span>MS Excel</span>
+            </div>
+            <div class="skill-item">
+              <img src="assests/icons/jupyter.png" alt="Jupyter" class="skill-icon" style="background: white;">
+              <span>Jupyter</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="projects" class="section reveal">
+        <h2>Projects that speak for me</h2>
+
+        <!-- Project 1 (placeholder) -->
+        <article class="card project-card" tabindex="0"
+          data-title="Project Title 1"
+          data-tech="Tech · Stack · Here"
+          data-desc="write project description">
+
+          <div class="project-icon">
+            <i class="fas fa-code"></i>
+          </div>
+
+          <div class="project-content">
+            <div class="project-image">
+             <img src="assests/icons/object detection.png" alt="Object Detection" style="width: 100%; height: auto; border-radius: 8px;">
+            </div>
+            <div class="project-text">
+              <h4>Object Detection</h4>
+              <p class="muted">Python 3.x,
+                              OpenCV,
+                              YOLOv5 / Faster R-CNN,
+                               NumPy,
+                               TensorFlow / PyTorch,
+                              Deep SORT for tracking</p>
+              <ul>
+                <li>Real-time object detection using YOLO / Faster R-CNN
+                    Object tracking with SORT / Deep SORT
+                    Works with live webcam feed or video files
+                    Displays bounding boxes, labels, and unique IDs for each object
+                    Extendable for custom object classes</li>
+                
+              </ul>
+              <div class="card-actions">
+                <a class="btn.source" href="  https://github.com/disha-creator/Object-detection" target="_blank" style="display:inline-block; padding:10px 20px; border-radius:30px; background:linear-gradient(90deg, #b38bfa, #3ec8ff); color:rgb(10, 0, 0); font-weight:bold; text-decoration:none; transition:0.3s;" rel="noopener">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 (placeholder) -->
+        <article class="card project-card" tabindex="0"
+          data-title="Project Title 2"
+          data-tech="Tech · Stack · Here"
+          data-desc="write project description">
+
+          <div class="project-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+
+          <div class="project-content">
+            <div class="project-image">
+            <img src="assests/icons/sign.jpeg" alt="Real-time Sign-to-Text Translator" style="width: 100%; height: auto; border-radius: 8px;">
+            
+          
+            </div>
+            <div class="project-text">
+              <h4>Real-time Sign-to-Text Translator</h4>
+              <p class="muted">Python 3.11
+
+                              OpenCV,
+
+                              MediaPipe, 
+
+                              Scikit-Learn ,
+
+                              NumPy,
+
+                              Pickle</p>
+              <ul>
+                <li>Leveraging Computer Vision, this real-time system tracks 21 distinct hand landmarks using Google MediaPipe and processes this spatial data through a high-performance Random Forest classifier to instantly translate sign language gestures into text with a live on-screen visual overlay."</li>
+                
+              </ul>
+              <div class="card-actions">
+                <a class="btn.source" href="https://github.com/disha-creator/Sign_Language_Recognizer" target="_blank" style="display:inline-block; padding:10px 20px; border-radius:30px; background:linear-gradient(90deg, #b38bfa, #3ec8ff); color:rgb(10, 0, 0); font-weight:bold; text-decoration:none; transition:0.3s;" rel="noopener">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      
+      <section id="education" class="section reveal">
+        <h2>Building blocks of my career</h2>
+        <div class="education-container">
+          <div class="edu-card">
+            <img src="assests/icons/clg.png" alt="MIET" class="edu-img">
+            <div class="edu-content">
+              <h4>Meerut Institute of Technology & Engineering</h4>
+              <p class="muted">Bachelor of Technology — Computer Engineering (Artificial Intelligence) · 2023 — 2027 (8/10)</p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <img src="assests/icons/school.png" alt="Seth B.K Maheshwari Girls Inter College" class="edu-img">
+            <div class="edu-content">
+              <h4>Seth B.K Maheshwari Girls Inter College</h4>
+              <p class="muted">Senior Secondary · 2022 — 2023 (80%)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+      <section id="certifications" style="padding:100px 0; text-align:center; background: #070707; color: #e8eefb;">
+        <h2 style="margin-bottom:30px; color: var(--accent1);">Learning, achieving, showcasing</h2>
+
+        <div class="cert-row">
+          <!-- Certificate 1 (placeholder) -->
+          <div class="cert-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="assests/certifications/logos/deloitte.png" alt="Certificate logo" class="cert-logo">
+                <div class="cert-name">Deloitte</div>
+                <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_epGfWv77A67P3Jw5n_1754496516533_completion_certificate.pdf" target="_blank" rel="noopener" class="cert-photo">Show Credential</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate 2 (placeholder) -->
+          <div class="cert-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="assests/certifications/logos/mongodb.png" alt="Certificate logo" class="cert-logo">
+                <div class="cert-name">mongodb</div>
+                <a href="https://learn.mongodb.com/c/gk-__WAURcOFBW7x-kTv1Q" target="_blank" rel="noopener" class="cert-photo">Show Credential</a>
+              </div>
+            </div>
+          </div>
+        
+      
+          
+          <div class="cert-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="assests/certifications/logos/forage.png" alt="Certificate logo" class="cert-logo">
+                <div class="cert-name">forage</div>
+                
+                <a href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_epGfWv77A67P3Jw5n_1754480441126_completion_certificate.pdf" target="_blank" rel="noopener" class="cert-photo">Show Credential</a>
+              </div>
+            </div>
+          </div>
+        
+      
+
+
+          <div class="cert-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="assests/certifications/logos/ibm.png" alt="Certificate logo" class="cert-logo">
+                <div class="cert-name">ibm</div>
+                <a href="https://www.credly.com/badges/893ac696-618c-4569-a73f-7ac62f0bce73/linked_in_profile" target="_blank" rel="noopener" class="cert-photo">Show Credential</a>
+              </div>
+            </div>
+          </div>
+        
+      
+
+          <div class="cert-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="assests/certifications/logos/matlab.png" alt="Certificate logo" class="cert-logo">
+                <div class="cert-name">matlab</div>
+                <a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=52e76427-912a-47d4-a14f-c4b6fbe38e63&" target="_blank" rel="noopener" class="cert-photo">Show Credential</a>
+              </div>
+            </div>
+          </div>
+        
+      
+          
+
+
+           <div class="cert-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="assests/certifications/logos/google cloud.png" alt="Certificate logo" class="cert-logo">
+                <div class="cert-name">google cloud</div>
+                <a href="https://partner.skills.google/public_profiles/dae94729-0547-4050-ae5b-216e0f517c60/badges/12106252?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" target="_blank" rel="noopener" class="cert-photo">Show Credential</a>
+              </div>
+            </div>
+          </div>
+        
+      
+      
+
+          <div class="cert-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="assests/certifications/logos/cisco.png" alt="Certificate logo" class="cert-logo">
+                <div class="cert-name">cisco</div>
+                <a href="https://www.credly.com/badges/56a5d47d-b1ae-4ace-a695-bfd737f80958/linked_in_profile" target="_blank" rel="noopener" class="cert-photo">Show Credential</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Strip -->
+      <section id="contact-strip">
+        <div class="contact-container">
+          <!-- Neeche apna email, phone number aur social links daal dena -->
+          <a href="disha.lodhi.cseai.2023@miet.ac.in" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/30/ffffff/new-post.png"/>
+          </a>
+          <a href="tel:9528257474" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/30/ffffff/phone.png"/>
+          </a>
+          <a href="https://www.linkedin.com/in/disha-lodhi-b962b932a/" target="_blank" rel="noopener" class="social-link">
+            <img src="https://img.icons8.com/ios-filled/30/ffffff/linkedin.png"/>
+          </a>
+          <a href="https://github.com/disha-creator" target="_blank" rel="noopener" class="social-link">
+            <img src="https://img.icons8.com/ios-filled/30/ffffff/github.png"/>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      © 2027 Disha Lodhi
+    </footer>
+  </div>
+
+  <!-- Project modal (dynamic content injected) -->
+  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-label="Project details">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <div class="modal-body"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

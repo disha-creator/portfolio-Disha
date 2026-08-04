@@ -2,10 +2,10 @@
 // Typed text effect (roles)
 // -----------------------------
 const roles = [
-  "AI Developer",
+  "Web Developer",
   "Full Stack Developer",
   "Automation Enthusiast",
-  "ML Learner",
+  " AI & ML Learner",
   "Open to Jobs & Internships"
 ];
 const typedEl = document.getElementById('typed-line');
@@ -33,9 +33,7 @@ function typeLoop() {
 typeLoop();
 
 
-// -----------------------------
-// Simple particles canvas
-// -----------------------------
+
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
 let W = canvas.width = innerWidth;
@@ -87,9 +85,6 @@ function drawParticles(){
 drawParticles();
 
 
-// -----------------------------
-// Reveal on scroll (IntersectionObserver)
-// -----------------------------
 const obs = new IntersectionObserver((entries) => {
   entries.forEach(e=>{
     if(e.isIntersecting) e.target.classList.add('visible');
@@ -98,9 +93,7 @@ const obs = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
 
-// -----------------------------
-// Smooth scroll + Active highlight
-// -----------------------------
+
 const sections = document.querySelectorAll("section, header");
 const navLinks = document.querySelectorAll(".nav-links a");
 

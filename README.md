@@ -50,7 +50,8 @@ portfolio-Disha/
 
 Add a screenshot here.
 
-Example:
+Example:![Uploading image.png…]()
+
 
 assets/portfolio-preview.png
 

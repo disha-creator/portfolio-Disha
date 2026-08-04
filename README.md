@@ -50,7 +50,8 @@ portfolio-Disha/
 
 Add a screenshot here.
 
-Example:
+Example: <img width="1911" height="871" alt="Screenshot 2026-08-04 134323" src="https://github.com/user-attachments/assets/7de4cfc9-0ed7-41ca-aac6-0a96bcd0d922" />
+
 
 assets/portfolio-preview.png
 

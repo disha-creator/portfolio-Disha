@@ -46,6 +46,13 @@ portfolio-Disha/
 └── README.md
 ```
 
+## 📸 Portfolio Preview
+
+Add a screenshot here.
+
+Example:
+
+assets/portfolio-preview.png
 
 ## 🔗 Connect With Me
 

@@ -44,16 +44,6 @@ portfolio-Disha/
 ├── style.css
 ├── script.js
 └── README.md
-```
-
-## 📸 Portfolio Preview
-
-Add a screenshot here.
-
-Example:![Uploading image.png…]()
-
-
-assets/portfolio-preview.png
 
 ## 🔗 Connect With Me
 

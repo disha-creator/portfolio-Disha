@@ -3,7 +3,10 @@
 // -----------------------------
 const roles = [
   "Web Developer",
-  "Full Stack Developer",
+  "Python Developer",
+  "Data Analyst",
+  "Cyber Security",
+  "Software Engineer",
   "Automation Enthusiast",
   " AI & ML Learner",
   "Open to Jobs & Internships"

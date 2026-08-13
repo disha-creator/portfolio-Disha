@@ -3,8 +3,8 @@
   --card:#0e0e12;
   --muted:#9aa0a6;
   --text:#e8eefb;
-  --accent1:#1fd18c; /* emerald green */
-  --accent2:#f5b942; /* warm amber */
+  --accent1:#1fd18c; 
+  --accent2:#f5b942; 
   --glass: rgba(255,255,255,0.04);
   --radius:14px;
   --max-width:1150px;
@@ -22,12 +22,12 @@ body{
 }
 
 
-/* BACKGROUND LAYER — vivid aurora orbs */
+
 #bg{
   position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;
 }
 
-/* soft dark base wash so bright orbs glow instead of washing out the page */
+
 #bg::before{
   content:"";position:absolute;inset:0;
   background:radial-gradient(circle at 50% 50%, rgba(7,7,7,0) 0%, rgba(7,7,7,0.55) 100%);
@@ -86,7 +86,7 @@ body{
   100%{transform:translate(0,0) scale(1)}
 }
 
-/* shimmering rainbow ribbon replacing the old flat flow-line */
+
 .flow-line{
   position:absolute;left:-10%;right:-10%;top:42%;
   height:2px;
@@ -102,37 +102,37 @@ body{
   100%{background-position:200% 50%}
 }
 
-/* particles canvas */
+
 #particles{position:fixed;inset:0;z-index:0;opacity:0.55}
 
-/* PAGE LAYOUT */
+
 .page{position:relative;z-index:2;max-width:var(--max-width);margin:80px auto;padding:24px}
 .nav{display:flex;justify-content:space-between;align-items:center;padding:12px 8px; gap:12px; border-radius:12px}
 .brand{font-weight:700;color:var(--accent1);letter-spacing:0.6px}
 
-/* Make nav sticky and visible on scroll */
+
 #mainNav{
-  position: fixed; /* sticky ki jagah fixed */
+  position: fixed; 
   top: 30px;
   padding:10px 18px;
   background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   backdrop-filter: blur(6px);
   box-shadow: 0 6px 30px rgba(0,0,0,0.6);
   width: 75%;
-  /* left: 0; */
-  z-index: 9999;   /* sabse upar */
+  
+  z-index: 9999;   
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 1000; /* text ke upar rahe */
+  z-index: 1000; 
 }
 
-/* Mobile fallback */
+
 .nav .nav-links{display:flex;gap:18px;list-style:none;align-items:center}
 .nav-links a{color:var(--muted);text-decoration:none;font-size:14px}
 .nav-links a:hover{color:var(--text)}
 
-/* Highlight active nav link */
+
 .nav-links a.active {
   color: var(--accent2);
   font-weight: 600;
@@ -140,7 +140,7 @@ body{
   padding-bottom: 2px;
 }
 
-/* HERO */
+
 .hero{display:flex;gap:36px;
   align-items:center;
   padding:36px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
@@ -155,20 +155,20 @@ h1{font-size:34px;margin-bottom:8px}
 @keyframes blink{50%{opacity:0}}
 .lead{color:var(--muted);max-width:640px;margin-bottom:18px}
 
-/* CTA */
+
 .cta{display:flex;gap:12px;align-items:center;margin-bottom:18px}
 .btn.ghost{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#070707;padding:10px 16px;border-radius:10px;font-weight:700;border:none;cursor:pointer;text-decoration:none}
 .quick-info{display:flex;gap:20px;color:var(--muted);font-size:14px;margin-top:8px}
 
-/* Avatar */
+
 .avatar-wrap{position:relative;display:inline-block}
 .avatar{width:280px;height:280px;object-fit:cover;border-radius:18px;border:2px solid rgba(255,255,255,0.06);box-shadow: 0 10px 30px rgba(0,0,0,0.6)}
 .badge{position:absolute;left:16px;bottom:16px;background:linear-gradient(90deg,var(--card), rgba(255,255,255,0.02));padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);font-size:13px;color:var(--muted)}
 
-/* SECTIONS */
+
 .section{position: relative;
-  padding-top: 120px; /* 80px navbar + 40px spacing */
-  margin-top: 0px;  /* negative equal to navbar height */
+  padding-top: 120px;
+  margin-top: 0px;  
   padding-left: 22px;
   padding-right: 22px;
   padding-bottom: 22px;
@@ -185,8 +185,8 @@ h1{font-size:34px;margin-bottom:8px}
 .muted{color:var(--muted);font-size:14px;margin-bottom:8px}
 ul{margin-left:18px;color:var(--text)}
 
-/* Project Cards Enhancements */
-/* Project cards full width */
+
+
 .project-card {
   width: 100%;
   max-width: 1100px;
@@ -198,7 +198,7 @@ ul{margin-left:18px;color:var(--text)}
 }
 
 
-/* Icon at top */
+
 .project-icon {
   font-size: 40px;
   color: #1fd18c;
@@ -206,7 +206,7 @@ ul{margin-left:18px;color:var(--text)}
   margin-bottom: 20px;
 }
 
-/* Content layout */
+
 .project-content {
   display: flex;
   flex-wrap: wrap;
@@ -245,12 +245,12 @@ ul{margin-left:18px;color:var(--text)}
   color: #ddd;
 }
 .project-card{
-  background: rgba(189, 185, 185, 0.1); /* halka transparent */
-  backdrop-filter: blur(10px);          /* glass blur */
-  -webkit-backdrop-filter: blur(10px);  /* Safari support */
-  border-radius: 15px;                  /* thoda rounded look */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* halka border */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);  /* depth */
+  background: rgba(189, 185, 185, 0.1); 
+  backdrop-filter: blur(10px);          
+  -webkit-backdrop-filter: blur(10px);  
+  border-radius: 15px;                  
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);  
 }
 
 .skill-category { 

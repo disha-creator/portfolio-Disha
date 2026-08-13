@@ -1,6 +1,3 @@
-// -----------------------------
-// Typed text effect (roles)
-// -----------------------------
 const roles = [
   "Web Developer",
   "Python Developer",
